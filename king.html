@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>king</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 310px;
+            height: 438px;
+            margin:100px auto;
+            border: 1px solid #000;
+            background: skyblue;
+            perspective:400px;
+            position: relative;
+        }
+        div p{
+            position: absolute;
+            font-size:20px;
+            color:white;
+            left:50px;
+            top:150px;
+        }
+        div img{
+            position: absolute;
+            transform-origin:center bottom;
+            transition:transform 1.5s;
+        }
+        div:hover img{
+            transform:rotateX(90deg);
+        }
+    </style>
+</head>
+<body>
+<div><p>恭喜你看到了這段文字</p><img src="images/pk.png" alt=""></div>
+</body>
+</html>
